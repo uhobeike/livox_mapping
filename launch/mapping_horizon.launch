@@ -2,6 +2,8 @@
 
   <arg name="rviz" default="true" />
 
+  <include file="$(find livox_ros_driver)/launch/livox_lidar_msg.launch"/>
+
   <node pkg="livox_mapping" type="loam_scanRegistration_horizon" name="scanRegistration_horizon" output="screen">
   </node>
 
